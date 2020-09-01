@@ -1,0 +1,178 @@
+image: steveblackburn/comp1110-2020-s2-gitlab-ci:0.1.1
+
+stages:
+  - build
+  - test
+
+before_script:
+  - export CP=src:/mse/comp1110-mse-2020s2.jar:/mse/hamcrest-core-1.3.jar:/mse/junit-4.12.jar
+
+build:
+  tags:
+    - comp1110
+  stage: build
+  script:
+    - javac -encoding utf-8 $JAVAFX_OPTIONS -cp $CP src/comp1110/mse/*.java
+  artifacts:
+    paths:
+      - src/comp1110/mse/*.class
+
+Q1Above:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q1AboveTest
+  allow_failure: true
+
+Q1Below:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q1BelowTest
+  allow_failure: true
+
+Q1Between:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q1BetweenTest
+  allow_failure: true
+
+Q1Interval:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q1IntervalTest
+  allow_failure: true
+
+Q1Outside:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q1OutsideTest
+  allow_failure: true
+
+Q1Product:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q1ProductTest
+  allow_failure: true
+
+Q1Sum:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q1SumTest
+  allow_failure: true
+
+Q1Third:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q1ThirdTest
+  allow_failure: true
+
+Q2Bus:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q2BusTest
+  allow_failure: true
+
+Q2Elephant:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q2ElephantTest
+  allow_failure: true
+
+Q2Fruit:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q2FruitTest
+  allow_failure: true
+
+Q2Meter:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q2MeterTest
+  allow_failure: true
+
+Q2Reservoir:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q2ReservoirTest
+  allow_failure: true
+
+Q2Vending:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q2VendingTest
+  allow_failure: true
+
+Q3Jigsaw:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q3JigsawTest
+  allow_failure: true
+
+Q3Magnets:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q3MagnetsTest
+  allow_failure: true
+
+Q3Shapes:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q3ShapesTest
+  allow_failure: true
+
+Q3Squares:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q3SquaresTest
+  allow_failure: true
+
+Q4Bridges:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q4BridgesTest
+  allow_failure: true
+
+Q4Tunnels:
+  tags:
+    - comp1110
+  stage: test
+  script:
+    - java -cp $CP org.junit.runner.JUnitCore comp1110.mse.Q4TunnelsTest
+  allow_failure: true
