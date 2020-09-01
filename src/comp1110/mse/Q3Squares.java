@@ -5,7 +5,7 @@ public class Q3Squares {
    * This problem is concerned with the placement of colored squares on a board,
    * as part of a game played on a 5 x 5 board.
    *
-   * - Their are five piece types ('R', 'G', 'B')
+   * - Their are three piece types ('R', 'G', 'B')
    * - There are five columns ('0' - '4')
    * - There are five rows ('0' - '4')
    * - There are four orientations ('N', 'E', 'S', 'W')

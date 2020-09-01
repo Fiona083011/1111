@@ -8,7 +8,7 @@ public class Q2Meter {
    * Constructor
    *
    * @param id The machine ID
-   * @param avgConsumption The average consumption per hour
+   * @param avgConsumption The average consumption per day
    */
   public Q2Meter(String id, int avgConsumption) {
     // FIXME 2a  complete this constructor
