@@ -44,7 +44,7 @@ public class Q2Fruit {
    * @param names An array of names
    * @param costs An array of costs
    * @return an array of fruit using the provided names and costs,
-   * or null if the numbers and speed arrays are different length or if they
+   * or null if the names and costs arrays are different length or if they
    * are null or have no elements.
    */
   public static Q2Fruit[] makeFruit(String[] names, int[] costs) {
