@@ -111,7 +111,7 @@ public class Q4BridgesTest {
   }
   @Test
   public void testLongest() {
-    longestTest("ABBAACCABBDBCABA", 10, 5);
+    longestTest("ABBAACCABBDBCABA", 10, 4);
     longestTest("CBDDDABCCCDBDDAD", 9, 4);
     longestTest("AAABDCACBDABDDCA", 10, 3);
     longestTest("BBCCDCBDABAAACDD", 13, 7);
@@ -134,13 +134,13 @@ public class Q4BridgesTest {
     longestTest("ADACCCADDBCACCBACCBDDBADB", 7, 12);
     longestTest("CDAABCCABCDABCACBBCBAACAC", 3, 1);
     longestTest("CDCBACADCDBADACBCCADDDBAD", 4, 1);
-    longestTest("ADBCBBBBDCAACCDDCABDBADDA", 16, 11);
+    longestTest("ADBCBBBBDCAACCDDCABDBADDA", 16, 10);
     longestTest("ADDAABDBBDBDDBDCDBAACDADD", 20, 4);
     longestTest("DDDBBCDADACDCBDCBAACCBACC", 17, 10);
     longestTest("DBCABDACBCBAAACBDDACCBCAA", 14, 4);
     longestTest("CBDAAAADADDADBBDCDDDBDAAC", 15, 1);
     longestTest("DABADBCBADCACDCDCCDCDBDAD", 18, 10);
-    longestTest("CCADBBDAADDDABDABCCDAABDB", 8, 16);
+    longestTest("CCADBBDAADDDABDABCCDAABDB", 8, 15);
     longestTest("ABACCDBADAACDBCDCACABACAD", 7, 3);
     longestTest("DDCABDDBDAABBCADCDDACDAAD", 0, 8);
     longestTest("DBCBBBBCBABDCBADBCDBDDABC", 0, 3);
