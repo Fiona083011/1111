@@ -22,6 +22,9 @@ public class Q1Above {
    *  of the first three above the threshold.
    */
   public static double above(double[] values, double threshold) {
+
+    //dsfdasfadsf
+
     return -1.0; // FIXME Q1
   }
 }
